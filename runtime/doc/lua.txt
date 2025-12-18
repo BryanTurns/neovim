@@ -3440,7 +3440,7 @@ vim.keymap.del({modes}, {lhs}, {opts})                      *vim.keymap.del()*
     See also: ~
       • |vim.keymap.set()|
 
-vim.keymap.set({mode}, {lhs}, {rhs}, {opts})                *vim.keymap.set()*
+vim.keymap.set({modes}, {lhs}, {rhs}, {opts})                *vim.keymap.set()*
     Defines a |mapping| of |keycodes| to a function or keycodes.
 
     Examples: >lua
@@ -3469,7 +3469,7 @@ vim.keymap.set({mode}, {lhs}, {rhs}, {opts})                *vim.keymap.set()*
 <
 
     Parameters: ~
-      • {mode}  (`string|string[]`) Mode "short-name" (see
+      • {modes}  (`string|string[]`) Mode "short-name" (see
                 |nvim_set_keymap()|), or a list thereof.
       • {lhs}   (`string`) Left-hand side |{lhs}| of the mapping.
       • {rhs}   (`string|function`) Right-hand side |{rhs}| of the mapping,
